@@ -13,13 +13,13 @@ string[] array1 = new string[5] {"123", "hello", "world", "res", "YYYhhhh"};
 string[] array2 = new string[array1.Length];
 void FirstArray(string[] array1, string[] array2)
 {
-    int count = 0;
+    int j = 0;
     for (int i = 0; i < array1.Length; i++)
     {
         if(array1[i].Length <= 3)
         {
-            array2[count] = array1[i];
-            count++;
+            array2[j] = array1[i];
+            j++;
         }
     }
 }
